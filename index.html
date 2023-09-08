@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicPlayer</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+
+</head>
+<body>
+    <div class="music-form">
+        
+        <div class="dashboard">
+            <div class="nameSong-block">
+                <h4>Now playing:</h4>
+                <h2 id="playingSong">-----</h2>
+            </div> 
+
+            <div class="CdLarger-block">
+                <img id="CdLarger" class="CdLarger" src="./assets/img/CDthumb.png">
+            </div>
+
+            <div class="controlsSong-block">
+                <div class="btn btn-repeat">
+                    <i class="ti-loop"></i>
+                </div>
+                <div class="btn btn-prev">
+                    <i class="ti-control-skip-backward"></i>
+                </div>
+                <div class="btn btn-toggle-play">
+                    <i class="ti-control-pause pauseIcon"></i>
+                    <i class="ti-control-play playIcon"></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class="ti-control-skip-forward"></i>
+                </div>
+                <div class="btn btn-random">
+                    <i class="ti-control-shuffle"></i>
+                </div>
+                <div class="btn like">
+                    <i class="ti-heart"></i>
+                </div>
+            </div>
+
+            <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+
+            <audio id="audio" src=""></audio>
+
+        </div>
+
+        <div class="playlist-form">
+            <h1>Playlists</h1>
+            <div class="playlists">
+                <!-- render() -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
