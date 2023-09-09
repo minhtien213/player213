@@ -1,9 +1,12 @@
 @media only screen and (max-width: 768px) {
     .music-form{
         width: 100%;
+        /* background-image:-webkit-linear-gradient(180deg, rgba(28, 28, 26, 0.5), rgba(19, 19, 19, 0.5)),
+        url(../img/bgr_home_mobile.jpg);*/
+        background-position: left; 
         display: flex;
         flex-direction: column;
-        padding: 10px 3px;
+        padding: initial;
     }
     .dashboard{
         width: 100%;
@@ -14,17 +17,57 @@
         
     }
     .nameSong-block{
-        margin-bottom: 15px;
+        margin-top: 40px;
+    }
+
+    .nameSong-block h2{
+        font-size: 30px;
+        margin-top: 15px;
     }
     .CdLarger-block{
         width: 95%;
+        height: 50%;
     }
     .CdLarger{
-        width: 30vh;
-        height: 30vh;
+        width: 32vh;
+        height: 32vh;
     }
+
+    .like{
+        display: none;
+    }
+
     .playlist-form{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
         width: 100%;
-        margin-top: 15px;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 999;
+        padding: 10px 0;
+        overflow: auto;
+        transform: translateX(100%);
+        transition: all 0.3s ease;
+    }
+
+    .playlists{
+        height: 90%;
+    }
+
+    .listBtn{
+        display:block;
+    }
+
+    .ti-close{
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .progress{
+        margin-bottom: 50px;
     }
 }

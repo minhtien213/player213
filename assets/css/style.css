@@ -23,7 +23,8 @@
     padding: 30px;
     color: var(--text-color);
     height:100vh;
-    overflow: hidden;
+    position: relative;
+    background-attachment: fixed;
 }
 
 .dashboard{
@@ -67,13 +68,14 @@
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 0 35px rgba(247, 246, 247, 0.8);
+    border: 2px solid #c5a7b8;
 }
 
 .CdLarger-block::before{
     content: '';
     width: 50px;
     height: 50px;
-    border: 4px solid #c5a7b8;
+    border: 3px solid #c5a7b8;
     border-radius: 50%;
     background-color: rgba(33, 30, 30, 0.7);
     position: absolute;
@@ -99,8 +101,13 @@
     cursor: pointer;
 }
 
+.listBtn{
+    display:none;
+}
+
 .playlist-form{
     width: 27%;
+    transform: translateX(0);
 }
 
 .playlists{
@@ -112,7 +119,7 @@
 
 h1{
     text-align: center;
-    margin-bottom: 10px;
+    font-size: 25px;
 }
 .song{
     display: flex;
@@ -126,7 +133,7 @@ h1{
 }
 
 .song.active{
-    background: linear-gradient(to right , rgba(234, 132, 132, 0.7), rgba(62, 179, 151, 0.7));    
+    background: linear-gradient(to right , rgb(199 148 148 / 70%), rgb(167 210 200 / 70%));   
 }
 
 .song:active{
@@ -164,5 +171,9 @@ h1{
     display: block;
 }
 .music-form.playing .playIcon{
+    display: none;
+}
+
+.ti-close{
     display: none;
 }

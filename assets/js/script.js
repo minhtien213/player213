@@ -18,7 +18,10 @@ const playlists = $('.playlists')
 const randomBtn = $('.ti-control-shuffle')
 const repeatBtn = $('.ti-loop')
 const likeBtn = $('.ti-heart')
-
+const playlistBtn = $('.ti-menu-alt')
+const modalPlaylists = $('.modalPlaylists')
+const playlist_form = $('.playlist-form')
+const closeBtn = $('.ti-close')
 
 
 const music = {
@@ -87,6 +90,41 @@ const music = {
                 singer: 'Hoàng Thùy Linh',
                 path: './assets/musics/SeeTinhCucakRemix-HoangThuyLinh.mp3',
                 image: './assets/img/cdSong1.jpg', 
+            },{   
+                title: 'Bật Tình Yêu Lên',
+                singer: 'Hòa Minzy - Tăng Duy Tân',
+                path: './assets/musics/BatTinhYeuLen.mp3',
+                image: './assets/img/cdSong.jpg', 
+            },
+            {   
+                title: 'Hãy Trao Cho Anh',
+                singer: 'Sơn Tùng M-TP',
+                path: './assets/musics/HayTraoChoAnh.mp3',
+                image: './assets/img/cdSong1.jpg', 
+            },
+            {   
+                title: 'Nàng Thơ',
+                singer: 'Hoàng Dũng',
+                path: './assets/musics/NangTho.mp3',
+                image: './assets/img/cdSong2.jpg', 
+            },
+            {   
+                title: 'Waining For You',
+                singer: 'Mono',
+                path: './assets/musics/waitingForYou.mp3',
+                image: './assets/img/cdSong3.jpg', 
+            },
+            {   
+                title: 'Xóa Tên Anh Đi',
+                singer: 'Jack97',
+                path: './assets/musics/XoaTenAnhDi-JackJ97.mp3',
+                image: './assets/img/cdSong.jpg', 
+            },
+            {   
+                title: 'Chân Ái',
+                singer: 'OrangeKhoi',
+                path: './assets/musics/ChanAi-OrangeKhoi.mp3',
+                image: './assets/img/cdSong1.jpg', 
             },
         ],
 
@@ -129,7 +167,7 @@ const music = {
             const cdLargerAnimate = cdLarger.animate([
                 { 'transform': 'rotate(360deg)'}],
                 {
-                    duration: 5000,
+                    duration: 7000,
                     iterations: Infinity
                 }
             )
@@ -252,6 +290,16 @@ const music = {
                     }
                 }
             };
+
+            //Click vào menu list
+            playlistBtn.onclick = function(){
+                playlist_form.style.transform = 'translateX(0)';
+            }
+
+            //Close Modal Playlists
+            closeBtn.onclick = function(){                
+                playlist_form.style.transform = 'translateX(100%)';
+            }
 
         },
 

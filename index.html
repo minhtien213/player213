@@ -14,7 +14,7 @@
         
         <div class="dashboard">
             <div class="nameSong-block">
-                <h4>Now playing:</h4>
+                <h4 style="color: rgb(222, 213, 202);">Now Playing</h4>
                 <h2 id="playingSong">-----</h2>
             </div> 
 
@@ -42,6 +42,9 @@
                 <div class="btn like">
                     <i class="ti-heart"></i>
                 </div>
+                <div class="btn listBtn">
+                    <i class="ti-menu-alt"></i>
+                </div>
             </div>
 
             <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
@@ -49,11 +52,14 @@
             <audio id="audio" src=""></audio>
 
         </div>
-
+        
         <div class="playlist-form">
             <h1>Playlists</h1>
             <div class="playlists">
                 <!-- render() -->
+            </div>
+            <div class="btn listBtn">
+                <i class="ti-close"></i>
             </div>
         </div>
     </div>
